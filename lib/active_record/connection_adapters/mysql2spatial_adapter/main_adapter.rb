@@ -115,7 +115,7 @@ module ActiveRecord
               default, default_function = field[:Default], nil
             end
 
-            new_column(@rgeo_factory_settings, field[:Field], default, type_metadata, field[:Null] == "YES", table_name, default_function, field[:Collation], comment: field[:Comment].presence)
+            new_column(@rgeo_factory_settings, field[:Field], default, type_metadata, field[:Null] == "YES", table_name, default_function, field[:Collation])
           end
         end
 
